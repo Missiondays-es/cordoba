@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <title>Missionday Sabadell | 09/08/2018</title>
+    <title>Missionday Sabadell | 08/SEP/2018</title>
 
     <!-- seo -->
     <meta property="og:url"           content="http://sabadell.missionday.es" />
     <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Mission Day Sabadell - Mission Day Sabadell 09/08/2018" />
+    <meta property="og:title"         content="Mission Day Sabadell - Mission Day Sabadell 08/SEP/2018" />
 
     <!-- this text will be shown if somebody shares your link  -->
     <meta property="og:description"   content="Agents, we want to discover Sabadell on Saturday, September 8, 2018. We will provide you high quality missions to explore the city on foot together. Sign up to receive more information soon." />
@@ -37,6 +37,43 @@
       gtag('js', new Date());
       gtag('config', 'UA-113471448-1');
     </script>
+	
+	<script>
+		var getFirstBrowserLanguage = function () {
+			var nav = window.navigator,
+			browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
+			i,
+			language;
+
+			// support for HTML 5.1 "navigator.languages"
+			if (Array.isArray(nav.languages)) {
+				for (i = 0; i < nav.languages.length; i++) {
+					language = nav.languages[i];
+					if (language && language.length) {
+						return language;
+					}
+				}
+			}
+
+			// support for other well known properties in browsers
+			for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
+				language = nav[browserLanguagePropertyKeys[i]];
+				if (language && language.length) {
+					return language;
+				}
+			}
+
+			return "";
+		}
+  
+		if(getFirstBrowserLanguage().toLowerCase().indexOf("es") !== -1) {
+			window.location = "index_es.html";
+		} else {
+			if(getFirstBrowserLanguage().toLowerCase().indexOf("ca") !== -1) {
+				window.location = "index_ca.html";
+			} 
+		} 
+	</script>
 
     <!-- css / fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -72,35 +109,39 @@
             <div id="main-menu" class="sticker" style="opacity: 1;">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-2">
+                        <div class="col-lg-4 col-md-2 col-sm-2">
                             <div class="logo">
-                                <a href="/"><img src="assets/img/md-logo.png" class="mdlogo" alt="Missionday"></a><br>
-
+                                <a href="http://sabadell.missionday.es">
+									<img src="assets/img/md-logo.png" class="mdlogo" alt="Mission Day Sabadell Logo">
+								</a>
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-10 ">
+                        <div class="col-lg-8 col-md-10 col-sm-10">
                             <div class="main-menu float-right">
                                 <!-- hidden on mobile -->
                                 <nav>
                                     <ul>
                                         <li class="active"><a href="#intro">Home</a></li>
-                                        <li class=""><a href="#missions">Mission Map</a></li>
-                                       <li><a href="#timetable">Timetable</a></li>
-                                       <li><a href="https://plus.google.com/communities/110559728913363113324">G+ community</a></li>
-										<li><a href="./index_es.html">Castellano</a></li>
-                                        <li><a href="./index_ca.html">Català</a></li>
+                                        <li><a href="#map">Map</a></li>
+										<li><a href="#missions">Missions</a></li>
+										<li><a href="#timetable">Timetable</a></li>
+										<li><a href="#signup">Links</a></li>
 <!--
-                                        <li> <a href="http://resist.cat/shop/">Shop Res</a></li>
+										<li><a href="https://plus.google.com/communities/110559728913363113324">G+ community</a></li>
+-->
+										<li><a class="button-default button-white" href="./index_es.html">Castellano</a></li>
+                                        <li><a class="button-default button-white" href="./index_ca.html">Català</a></li>
+<!--
+                                        <li><a href="http://resist.cat/shop/">Shop Res</a></li>
                                         <li><a href="http://sabadell.enlighthouse.es/">Shop Enl</a></li>
 -->
-
                                     </ul>
                                 </nav>
                             </div>
-                            <a href="http://events.ingress.com/MissionDay/Sabadell" class="menu-btn button-default button-blue visibile-xs">Niantic Signup</a> <!-- only mobile thanks to visibile-xs but change if you like -->
-                            <!-- <a href="https://tarragonamd.eventbrite.es" class="main-menu menu-btn button-default button-blue">Register</a> -->
-                            <div class="main-menu float-right">
-                            </div>
+                            <a type="button" href="http://events.ingress.com/MissionDay/Sabadell" target="_blank" class="menu-btn button-default button-blue niantic">Niantic Signup</a> <!-- only mobile thanks to visibile-xs but change if you like -->
+<!--
+							<a href="https://sabadellmd.eventbrite.es" class="main-menu menu-btn button-default button-blue">Register</a>
+-->
                         </div>
                     </div>
                 </div>
@@ -120,16 +161,20 @@ Add your own background image
 	<div class="banner-area banner-skyline banner-horizontal" id="banner" style="background:url(assets/img/bg_header.jpg) center center no-repeat;">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-lg-7">
+                    <div class="col-md-9 col-sm-8 col-lg-7">
                         <div class="banner-text">
                             <div class="banner-table-cell">
                                 <h1>INGRESS<br><span>MISSION DAY </span>Sabadell</h1>
                                 <p>Agents, we want to discover Sabadell on Saturday, September 8, 2018. We will provide you <strong><span> high quality </span></strong>missions to explore the city on foot together. Sign up to receive more information soon. </p>
                                 <div class="banner-buttons">
-                                    <!-- <a href="https://tarragonamd.eventbrite.es" class="button-default button-md">Register</a> -->
-                                    <a href="#missions" class="button-default button-md visibile-xs">Our Missions</a> <!-- only mobile thanks to visibile-xs but change if you like -->
-                                    <a href="./index_es.html" class="button-default button-md hidden-lg">Castellano</a>
-                                    <a href="./index_ca.html" class="button-default button-md hidden-lg">Català</a>
+                                    <!-- <a href="https://sabadellmd.eventbrite.es" class="button-default button-md">Register</a> -->
+<!--                                    
+									<a href="#missions" class="visible-xs button-default button-md">Our Missions</a><br>
+									<a href="#timetable" class="visible-xs button-default button-md">Timetable</a><br>
+-->									
+                                    <a href="./index_es.html" class="visible-xs button-default button-white">Castellano</a><br>
+                                    <a href="./index_ca.html" class="visible-xs button-default button-white">Català</a><br>
+									<a type="button" href="http://events.ingress.com/MissionDay/Sabadell" target="_blank" class="visible-xs button-default button-md niantic">Niantic Signup</a>
 <!--
                                     <a href="http://resist.cat/shop/" class="button-default button-md hidden-lg">Shop Res</a>
                                     <a href="http://sabadell.enlighthouse.es/" class="button-default button-md hidden-lg">Shop Enl</a>
@@ -138,7 +183,7 @@ Add your own background image
                             </div>
                         </div>
                     </div>
-                    <div class="hidden-xs col-sm-4 col-lg-5">
+                    <div class="hidden-xs col-md-3 col-sm-4 col-lg-5">
                         <div class="banner-product-image">
                             <div class="wow bounceInUp" data-wow-duration="2s" data-wow-delay="0s" style="visibility: visible; animation-duration: 2s; animation-delay: 0s; animation-name: bounceInUp;">
                                 <!--
@@ -155,27 +200,6 @@ Add your own background image
                 </div>
             </div>
         </div>
-
-        <!--
-##############
-Mobile Map - THIS WILL ONLY BE SHOWN ON MOBILE
-
-You  can add a link to your google Map, take a look at the berlin missionday map
-https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll=41.54751111636946%2C2.1061789999999974&z=14
-
-##############
-         -->
-<section id="mobile-map" class="visible-xs" style="margin:-20px 0 40px 0; position:relative; z-index:100">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center" >
-                 <a href="https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll=41.54751111636946%2C2.1061789999999974&z=14"><img src="assets/img/missionmap.jpg" alt="Map" class="img-responsive"></a>
-                  <a class="button-default button-md" href="https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll=41.54751111636946%2C2.1061789999999974&z=14">Open Mobile Map</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- // -->
 
 <!-- Introduction -->
 <section id="intro">
@@ -199,20 +223,19 @@ https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll
                     <div class="col-xs-12 col-sm-7 col-lg-6">
                         <p>Mission Day brings together Agents from both factions to explore cities around the world through the lens of Ingress with unique and local adventures on foot.</p>
                         <p>Agents, we want to discover Sabadell on Saturday, September 8, 2018. We will provide you high quality missions to explore the city on foot together. </p>
-                        <p><strong>Important! You must register with Niantic. <a href="http://events.ingress.com/MissionDay/sabadell">Register Now</a></strong></p>
-                        <!-- <p><strong>Important! You also need to register in this page. <a href="https://tarragonamd.eventbrite.es">Register Now</a></strong></p> -->
-                        <p><strong>You must complete at least 12 Missions for the Badge. Checkout the <a href="#missions">Missions!</a></strong></p>
+                        <p style="color: #e86e2d;"><strong>Important! You must register with Niantic. <a href="http://events.ingress.com/MissionDay/sabadell">Register Now</a></strong></p>
+                        <!-- <p><strong>Important! You also need to register in this page. <a href="https://sabadellmd.eventbrite.es">Register Now</a></strong></p> -->
+                        <p><strong>You must complete at least 6 Missions for the Badge. Checkout the <a href="#missions">Missions!</a></strong></p>
                         <p><strong>Res PoC:</strong>
 						<a href="https://plus.google.com/108601080804793324533">@xxMERYLxx</a> &
-                        <a href="https://plus.google.com/105664473313603784894">@Transcan</a> &                        
-                        <a href="https://plus.google.com/105084567791041159188">@UNKOWN</a>
+						<a href="https://plus.google.com/+EliasOrtizReyes">@Shudy</a> &
+                        <a href="https://plus.google.com/+SergioMart%C3%ADnRodr%C3%ADguez">@Transcan</a>
                         </p>
                         <p>
                         <strong>Enl PoC:</strong>
 						<a href="https://plus.google.com/+BeMataBeMata">@BeMata</a> &
-                        <a href="https://plus.google.com/+PauMaza">@Paumaza</a> &
-						<a href="https://plus.google.com/+PauMaza">@Quasar711</a> &
-                        <a href="https://plus.google.com/u/0/+JosepMariaSentisBleda">@DynamoJoe</a>
+                        <a href="https://plus.google.com/100925620703644672132">@qsr711</a> &
+                        <a href="https://plus.google.com/+JosepMariaSentisBleda">@DynamoJoe</a>
                         </p>
                         <p>You can show us your missions at the <a href="#timetable">registration point</a></p>
                     </div>
@@ -227,17 +250,40 @@ https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll
       <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll=41.54751111636946%2C2.1061789999999974&z=14"></iframe>
     </div> 
 </section>
-
 <!-- // map -->
 
+<!--
+##############
+Mobile Map - THIS WILL ONLY BE SHOWN ON MOBILE
+
+You  can add a link to your google Map, take a look at the berlin missionday map
+https://www.google.com/maps/d/viewer?mid=11SksJmgINlqaGuzc1eLbRAGRHko
+
+##############
+         -->
+<section id="mobile-map" class="visible-xs" style="margin:20px 0 40px 0; position:relative; z-index:100">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center" >
+                <a href="https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll"><img src="assets/img/missionmap.jpg" alt="Mapa" class="img-responsive"></a>
+                <a class="button-default button-md" href="https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll">Open Mobile Map</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // mobile-map -->
+
+<!-- Missions -->
 <section id="missions">
         <div class="container clearfix">
-
                 <img src="assets/img/md-logo.png" class="mdlogo">
+				<div class="section-title text-center title-blue">
+                    <h1>Missions<span> MD: Sabadell</span></h1>
+                </div>
 
                 <!-- col mission badge images -->
                 <div class="row">
-                <div class="col-sm-6 col-md-5" style="text-align:center">
+                <div class="hidden-xs col-sm-6 col-md-5" style="text-align:center">
                     <!--
                      Berlin had 24 Missions - this is also niantics limit for missiondays atm.
 
@@ -251,27 +297,27 @@ https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll
 
                         todo: add psd to github...
                      -->
-                    <img id="mID-01" class="mission-badge" src="assets/mission-badge/01.png" alt="Amfiteatre" />
-                    <img id="mID-02" class="mission-badge" src="assets/mission-badge/02.png" alt="Monument a Roger de Llúria" />
-                    <img id="mID-03" class="mission-badge" src="assets/mission-badge/03.png" alt="Teatre Metropol" />
-                    <img id="mID-04" class="mission-badge" src="assets/mission-badge/04.png" alt="Circ Romà" />
-                    <img id="mID-05" class="mission-badge" src="assets/mission-badge/05.png" alt="Torre del Petrori" />
-                    <img id="mID-06" class="mission-badge" src="assets/mission-badge/06.png" alt="Casa Canals" />
-                    <img id="mID-07" class="mission-badge" src="assets/mission-badge/07.png" alt="Portal de Sant Antoni" />
-                    <img id="mID-08" class="mission-badge" src="assets/mission-badge/08.png" alt="Fòrum Provincial" />
-                    <img id="mID-09" class="mission-badge" src="assets/mission-badge/09.png" alt="Catedral de Santa Maria" />
-                    <img id="mID-10" class="mission-badge" src="assets/mission-badge/10.png" alt="Capella de Sant Magí" />
-                    <img id="mID-11" class="mission-badge" src="assets/mission-badge/11.png" alt="Arquebisbat" />
-                    <img id="mID-12" class="mission-badge" src="assets/mission-badge/12.png" alt="Passeig Arqueològic" />
-                    <img id="mID-13" class="mission-badge" src="assets/mission-badge/13.png" alt="Camp de Mart" />
-                    <img id="mID-14" class="mission-badge" src="assets/mission-badge/14.png" alt="Casa Castellarnau" />
-                    <img id="mID-15" class="mission-badge" src="assets/mission-badge/15.png" alt="Ajuntament" />
-                    <img id="mID-16" class="mission-badge" src="assets/mission-badge/16.png" alt="Als herois de 1811" />
-                    <img id="mID-17" class="mission-badge" src="assets/mission-badge/17.png" alt="Monument als Castellers" />
-                    <img id="mID-18" class="mission-badge" src="assets/mission-badge/18.png" alt="Mercat Central" />
+                    <img id="mID-01" class="mission-badge" src="assets/mission-badge/01.png" alt="Biblioteca dels Safareigs" />
+                    <img id="mID-02" class="mission-badge" src="assets/mission-badge/02.png" alt="Cal Balsach" />
+                    <img id="mID-03" class="mission-badge" src="assets/mission-badge/03.png" alt="Torre de l’Aigua" />
+                    <img id="mID-04" class="mission-badge" src="assets/mission-badge/04.png" alt="Fira Sabadell" />
+                    <img id="mID-05" class="mission-badge" src="assets/mission-badge/05.png" alt="Club Natació Sabadell" />
+                    <img id="mID-06" class="mission-badge" src="assets/mission-badge/06.png" alt="Palau Municipal d’Esports" />
+                    <img id="mID-07" class="mission-badge" src="assets/mission-badge/07.png" alt="Església Sant Oleguer" />
+                    <img id="mID-08" class="mission-badge" src="assets/mission-badge/08.png" alt="Biblioteca Vapor Badia" />
+                    <img id="mID-09" class="mission-badge" src="assets/mission-badge/09.png" alt="Teatre La Faràndula" />
+                    <img id="mID-10" class="mission-badge" src="assets/mission-badge/10.png" alt="Despatx Lluch" />
+                    <img id="mID-11" class="mission-badge" src="assets/mission-badge/11.png" alt="Casal Pere Quart" />
+                    <img id="mID-12" class="mission-badge" src="assets/mission-badge/12.png" alt="Església Sant Fèlix" />
+                    <img id="mID-13" class="mission-badge" src="assets/mission-badge/13.png" alt="Ajuntament" />
+                    <img id="mID-14" class="mission-badge" src="assets/mission-badge/14.png" alt="Museu del Gas" />
+                    <img id="mID-15" class="mission-badge" src="assets/mission-badge/15.png" alt="Mercat Central" />
+                    <img id="mID-16" class="mission-badge" src="assets/mission-badge/16.png" alt="Vapor Llonch" />
+                    <img id="mID-17" class="mission-badge" src="assets/mission-badge/17.png" alt="Observatori" />
+                    <img id="mID-18" class="mission-badge" src="assets/mission-badge/18.png" alt="Parc Catalunya" />
 
                     <!-- add Link to your Google Map here - WE LOVE GOOD UX  -->
-                    <a class="wow bounceInUp button-default button-md" style="margin:1em auto 2em auto" data-wow-duration="2s"  href="https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll=41.54751111636946%2C2.1061789999999974&z=14">Open Map</a>
+                    <a class="wow bounceInUp button-default button-md" style="margin:1em auto 2em auto" data-wow-duration="2s"  href="https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll">Open Map</a>
                     <!-- // MAP -->
                     <br>
                 </div>
@@ -281,7 +327,7 @@ https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll
             <div class="col-sm-6 col-md-7">
 
                 <!-- yeah we like to brag.... -->
-                <div class="section-title no-mb"> <h1>CREATED BY REAL <span>AGENTS</span></h1> </div>
+                <div class="hidden-xs section-title no-mb"> <h1>CREATED BY REAL <span>AGENTS</span></h1> </div>
                     <p>
                         18 <span class="highlight">Missions</span> across Sabadell are waiting to be discovered. <br>
                         All Missions are created and tested by local Agents to ensure a great Mission Day experience.
@@ -291,36 +337,34 @@ https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll
                  <ul class="mission-names" id="mName">
 
                     <!-- MISSION SHOULD BE THE EXCACT NAME AS IT APPEARS IN THE SCANNER!! -->
-                    <li class="mID-01">Amfiteatre</li>
-                    <li class="mID-02">Monument a Roger de Llúria</li>
-                    <li class="mID-03">Teatre Metropol</li>
-                    <li class="mID-04">Circ Romà</li>
-                    <li class="mID-05">Torre del Petrori</li>
-                    <li class="mID-06">Casa Canals</li>
-                    <li class="mID-07">Portal de Sant Antoni</li>
-                    <li class="mID-08">Fòrum Provincial</li>
-                    <li class="mID-09">Catedral de Santa Maria</li>
-                    <li class="mID-10">Capella de Sant Magí</li>
-                    <li class="mID-11">Arquebisbat</li>
-                    <li class="mID-12">Passeig Arqueològic</li>
-                    <li class="mID-13">Camp de Mart</li>
-                    <li class="mID-14">Casa Castellarnau</li>
-                    <li class="mID-15">Ajuntament</li>
-                    <li class="mID-16">Als herois de 1811</li>
-                    <li class="mID-17">Monument als Castellers</li>
-                    <li class="mID-18">Mercat Central</li>
+                    <li class="mID-01">Biblioteca dels Safareigs</li>
+                    <li class="mID-02">Cal Balsach</li>
+                    <li class="mID-03">Torre de l’Aigua</li>
+                    <li class="mID-04">Fira Sabadell</li>
+                    <li class="mID-05">Club Natació Sabadell</li>
+                    <li class="mID-06">Palau Municipal d’Esports</li>
+                    <li class="mID-07">Església Sant Oleguer</li>
+                    <li class="mID-08">Biblioteca Vapor Badia</li>
+                    <li class="mID-09">Teatre La Faràndula</li>
+                    <li class="mID-10">Despatx Lluch</li>
+                    <li class="mID-11">Casal Pere Quart</li>
+                    <li class="mID-12">Església Sant Fèlix</li>
+                    <li class="mID-13">Ajuntament</li>
+                    <li class="mID-14">Museu del Gas</li>
+                    <li class="mID-15">Mercat Central</li>
+                    <li class="mID-16">Vapor Llonch</li>
+                    <li class="mID-17">Observatori</li>
+                    <li class="mID-18">Parc Catalunya</li>
                  </ul><!-- end Mission Name List -->
             </div><!-- end col for missionday name list -->
             </div><!-- end row -->
         </div> <!-- end container -->
 </section>
-
+<!-- // Missions -->
 
 <!-- TIME TABLE -->
-
 <section id="timetable">
     <div class="container clearfix">
-
         <div class="row">
             <div class="col-md-9 col-md-offset-2">
                 <div class="section-title text-center title-blue">
@@ -331,7 +375,6 @@ https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll
 
         <div class="row">
             <div class="col-md-9 col-md-offset-2">
-
                 <!--
                     EVENT TIME TABLE
                     change to your needs... but add Map Links, Agents will love it!
@@ -343,49 +386,62 @@ https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll
                     </thead>
 
                     <tbody>
-			<tr>
+						<tr>
                             <td>10:30</td>
                             <td> <strong>Group Picture @ <a class="locationLink" href="https://www.ingress.com/intel?ll=41.551471,2.097313&z=19&pls=41.176638,1.141289,41.251531,1.367346_41.138478,1.292113,41.251531,1.367346_41.078991,1.213705,41.176021,1.14207_41.078991,1.213705,41.251531,1.367346&pll=41.551854,2.097485">Parc Catalunya</a></strong><br>
-                                <br><a href="https://goo.gl/maps/vaxnHa7BcWE2">[Location]</a>
-                              </td>
-                        </tr>
-                        <tr>
-                            <td> 11:00 - 13:00 and 17:00 - 19:00 </td>
-                            <td> <strong>Registration</strong><br>
-                                
-                            Show us your Missions @ Can Balsach <br><a clas="locationLink" href="https://goo.gl/maps/FBYRCu4KrWt">[Location]</a>
+								<a href="https://goo.gl/maps/vaxnHa7BcWE2">[Location]</a>
                             </td>
                         </tr>
-
+                        <tr>
+                            <td> 11:00 - 13:00<br>17:00 - 19:00</td>
+                            <td> <strong>Registration</strong><br>
+								Show us your Missions @ Can Balsach<br>
+								<a clas="locationLink" href="https://goo.gl/maps/FBYRCu4KrWt">[Location]</a>
+                            </td>
+                        </tr>
                     </tbody>
-
                 </table><!-- end time table -->
-
             </div> <!-- end col -->
         </div> <!-- end row -->
     </div> <!-- end container -->
 </section>
 
 <section id="signup" style="background:url(assets/img/bg_footer.jpg) center  no-repeat;">
-
-       <div class="container clearfix">
+		<div class="container clearfix">
             <div class="row">
-                <div class="col-md-12">
-
-                    <!-- We used a custom Sign-Up Script - you can add a Link to your Sign-Up thingy here or just link to the community -->
-                    <!-- <div class="signup-box wow fadeInUp">
-                         <img src="assets/img/md-logo.png" class="mdlogo" >
-                         <a href="https://tarragonamd.eventbrite.es" class="btn2">Register</a>
-                     </div> -->
-                     <!-- end signup -->
-
-                </div><!-- end col -->
-        </div><!-- end row -->
-       </div><!-- end container -->
+                <!-- We used a custom Sign-Up Script - you can add a Link to your Sign-Up thingy here or just link to the community -->
+				<div class="col-md-3 col-sm-3">
+					<div class="signup-box" style="visibility: visible; animation-duration: 2s; animation-delay: 0s; animation-name: fadeInUp;">
+						<img src="assets/img/niantic-logo.png" class="mdlogo" >
+						<a href="http://events.ingress.com/MissionDay/Sabadell" class="btn2">NIA Signup</a>
+                    </div><!-- end signup -->
+				</div><!-- end col -->
+                <div class="col-md-3 col-sm-3">
+                    <div class="signup-box" style="visibility: visible; animation-duration: 2s; animation-delay: 0s; animation-name: fadeInUp;">
+						<img src="assets/img/eventbrite-logo.png" class="mdlogo" >
+						<a href="https://sabadellmd.eventbrite.es" class="btn2">Event Signup</a>
+					</div><!-- end signup -->
+				</div><!-- end col -->
+				<div class="col-md-3 col-sm-3">
+					<div class="signup-box" style="visibility: visible; animation-duration: 2s; animation-delay: 0s; animation-name: fadeInUp;">
+						<img src="assets/img/tg-logo.png" class="mdlogo" >
+						<a href="https://t.me/MDSabadell" class="btn2">TG Channel</a>
+						</div><!-- end signup -->
+				</div><!-- end col -->
+				<div class="col-md-3 col-sm-3">
+					<div class="signup-box" style="visibility: visible; animation-duration: 2s; animation-delay: 0s; animation-name: fadeInUp;">
+						<img src="assets/img/news-logo.png" class="mdlogo" >
+						<a href="https://t.me/MDSabadell" class="btn2">Info Channel</a>
+					</div><!-- end signup -->
+				</div><!-- end col -->
+			</div><!-- end row -->
+		</div><!-- end container -->
 </section>
+
 <footer >
   <small> copyright 2018 by sabadell.missionday.es based on <a href="http://github.com/garytube/missionday">@garytube/missionday</a>| a sabadell ingress cross faction project | this is not the official niantic page</small>
 </footer>
+
 	<!-- js -->
 	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	<!-- fade in animation -->
@@ -403,45 +459,8 @@ https://www.google.com/maps/d/u/2/embed?mid=1TETSOHd3L4GYWVOyyo-lVRGJYdwqnLeX&ll
 
 
  <script>
-/*	 
- var getFirstBrowserLanguage = function () {
-    var nav = window.navigator,
-    browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
-    i,
-    language;
-
-    // support for HTML 5.1 "navigator.languages"
-    if (Array.isArray(nav.languages)) {
-      for (i = 0; i < nav.languages.length; i++) {
-        language = nav.languages[i];
-        if (language && language.length) {
-          return language;
-        }
-      }
-    }
-
-    // support for other well known properties in browsers
-    for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
-      language = nav[browserLanguagePropertyKeys[i]];
-      if (language && language.length) {
-        return language;
-      }
-    }
-
-    return "";
- }
- 
- 
- if(getFirstBrowserLanguage().toLowerCase().indexOf("es") !== -1) {
-	  if(confirm("Hemos detectado que utilizas el castellano como idioma, ¿deseas ir a la página en español?")) window.location = "http://sabadell.missionday.es/index_es.html";
-  } else {
-	 if(getFirstBrowserLanguage().toLowerCase().indexOf("ca") !== -1) {
-		if(confirm("Hem detectat que fas servir el català, vols canviar a la plana en català?"))  window.location = "http://sabadell.missionday.es/index_ca.html";
-	 } 
-}*/	 
-
 function initialize() {
-
+ 
         //add map, the type of map
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 14,

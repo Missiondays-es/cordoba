@@ -1,6 +1,4 @@
 
-.niantic {border: 1px solid #e86e2d; color: #ffffff !important; background: transparent !important; }
-
 @media (min-width:1400px) and (max-width:1920px) {
 	.container { width: 1200px }
 	.about-text { margin-right: 72px; margin-top: 75px }
@@ -33,11 +31,13 @@
 	.box .footer-area::before { height: 233px }
 }
 @media (min-width:768px) and (max-width:991px) {
-	.container { width: 750px }
+	.logo { width: 85px; margin: 0 auto; display: block }
+	.mdlogo { width: 200px;	margin: 15px auto 40px auto; display: block; }
+	.container { width: 768px }
 	#main-menu { top: 70px }
 	.banner-area { height: 620px }
-	.banner-text h1 { font-size: 48px; line-height: 56px; margin-bottom: 30px }
-	.banner-text p { display: none }
+	.banner-text h1 { font-size: 44px; line-height: 38px }
+	.banner-text p { font-size: 1.9rem; line-height: 2.8rem; padding-right: 11px; margin-bottom: 0px; }
 	.about-area { padding-top: 121px }
 	.about-text { margin: 0 }
 	.about-text h2 { margin-bottom: 10px }
@@ -63,6 +63,7 @@
 	body {font-size: 14px;}
 	.highlight { font-size: 1.2em; margin-bottom: 20px !important }
 	.logo { width: 80px; margin: 0 auto; display: block }
+	.mdlogo { width: 180px;	margin: 15px auto 40px auto; display: block; }
 	.main-menu nav ul li a { margin-right: 10px }
 	.mission-names { column-count: 1 !important }
 	.mission-logo { margin: 30px auto !important; width: 150px !important }
