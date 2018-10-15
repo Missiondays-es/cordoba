@@ -25,13 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="244" column="58" selection-start-line="244" selection-start-column="53" selection-end-line="244" selection-end-column="58" />
+            <state relative-caret-position="269">
+              <caret line="262" selection-start-line="262" selection-end-line="262" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#2;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +41,8 @@
       <file leaf-file-name="404.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -49,8 +50,8 @@
       <file leaf-file-name="index_ca.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_ca.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="207" column="58" selection-start-line="207" selection-start-column="53" selection-end-line="207" selection-end-column="58" />
+            <state relative-caret-position="462">
+              <caret line="296" column="34" selection-start-line="296" selection-start-column="34" selection-end-line="296" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -58,11 +59,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MD.kml" pinned="false" current-in-tab="true">
+        <entry file="file://D:/Users/Antoni/OneDrive - Universitat de les Illes Balears/Ingress/MD.kml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file leaf-file-name="index_es.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_es.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="324" column="98" selection-start-line="324" selection-start-column="98" selection-end-line="324" selection-end-column="98" />
+            <state relative-caret-position="306">
+              <caret line="233" selection-start-line="233" selection-end-line="233" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -95,6 +101,14 @@
       <find>18 &lt;</find>
       <find>https://missiondaypalma.eventbrite.es</find>
       <find>embed</find>
+      <find>obrir</find>
+      <find>ajuntament_palma.png&quot; class=&quot;mdlogo&quot;</find>
+      <find>mòbil</find>
+      <find>mapa mòbil</find>
+      <find>casal_solleric.png&quot; class=&quot;mdlogo&quot;</find>
+      <find>offset</find>
+      <find>debugger eval code:89:13</find>
+      <find>?</find>
     </findStrings>
     <replaceStrings>
       <replace>Palma</replace>
@@ -110,6 +124,8 @@
       <replace>http://events.ingress.com/MissionDay/RecursionPrime/Palma</replace>
       <replace>https://missiondaypalma.eventbrite.es</replace>
       <replace>https://www.eventbrite.es/e/mdpalma-tickets-51076037804</replace>
+      <replace>ajuntament_palma.png&quot;</replace>
+      <replace>casal_solleric.png&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Antoni\projects\palma</dir>
@@ -122,10 +138,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/map.html" />
-        <option value="$PROJECT_DIR$/404.html" />
         <option value="$PROJECT_DIR$/index_es.html" />
-        <option value="$PROJECT_DIR$/index_ca.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/404.html" />
+        <option value="$PROJECT_DIR$/index_ca.html" />
+        <option value="D:/Users/Antoni/OneDrive - Universitat de les Illes Balears/Ingress/MD.kml" />
       </list>
     </option>
   </component>
@@ -242,12 +259,12 @@
       <option name="presentableId" value="Default" />
       <updated>1539623848316</updated>
       <workItem from="1539623849674" duration="4061000" />
-      <workItem from="1539627931722" duration="2511000" />
+      <workItem from="1539627931722" duration="7838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6572000" />
+    <option name="totallyTimeSpent" value="11899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -295,6 +312,7 @@
           <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -347,13 +365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android-chrome-192x192.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -374,18 +385,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index_es.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="324" column="98" selection-start-line="324" selection-start-column="98" selection-end-line="324" selection-end-column="98" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index_ca.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="207" column="58" selection-start-line="207" selection-start-column="53" selection-end-line="207" selection-end-column="58" />
+        <state relative-caret-position="306">
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
           <folding>
             <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -394,13 +395,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="244" column="58" selection-start-line="244" selection-start-column="53" selection-end-line="244" selection-end-column="58" />
+        <state relative-caret-position="269">
+          <caret line="262" selection-start-line="262" selection-end-line="262" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_ca.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="296" column="34" selection-start-line="296" selection-start-column="34" selection-end-line="296" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://D:/Users/Antoni/OneDrive - Universitat de les Illes Balears/Ingress/MD.kml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
